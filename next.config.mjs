@@ -2,11 +2,11 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    images: {
-      domains: ['example.com'], // Add the domains of the external images here
-    },
-  }
-  
-  export default nextConfig;
-  
+  reactStrictMode: true,
+  images: {
+    domains: ['example.com'], // Keep your external domains for images here
+    unoptimized: true,        // Disable image optimization for local images
+  },
+}
+
+export default nextConfig;
