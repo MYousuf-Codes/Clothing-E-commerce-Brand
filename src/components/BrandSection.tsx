@@ -12,10 +12,10 @@ const BrandSection = () => {
   ];
 
   return (
-    <section className="flex flex-wrap justify-around items-center py-8 bg-yellow-200">
+    <section className="flex flex-wrap justify-center items-center py-8 bg-yellow-200">
       {brands.map((brand, index) => (
-        <div key={index} className="w-20 sm:w-24 m-2 sm:m-4">
-          <Image src={brand.src} alt={brand.name} width={100} height={50} className="w-full h-auto" />
+        <div key={index} className="flex items-center justify-center w-20 sm:w-24 md:w-28 lg:w-32 m-2 sm:m-4 transition-transform duration-300 hover:scale-105">
+          <Image src={brand.src} alt={brand.name} width={100} height={50} className="w-full h-auto object-contain" />
         </div>
       ))}
     </section>

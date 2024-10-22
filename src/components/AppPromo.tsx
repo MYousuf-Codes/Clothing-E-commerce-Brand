@@ -4,24 +4,35 @@ import Image from 'next/image';
 
 const AppPromo: React.FC = () => {
   return (
-    <section className="flex justify-between items-center p-10 bg-yellow-50">
-      <div>
-        <h2 className="text-4xl font-extrabold ml-24">
-          DOWNLOAD APP & 
-          GET THE VOUCHER!
+    <section className="flex flex-col md:flex-row justify-between items-center p-6 md:p-10 bg-yellow-50">
+      <div className="text-center md:text-left md:ml-24">
+        <h2 className="text-3xl md:text-4xl font-extrabold">
+          DOWNLOAD APP & <br /> GET THE VOUCHER!
         </h2>
-        <p className="mt-4 text-gray-700 ml-24">
+        <p className="mt-4 text-gray-700">
           Get 30% off for first transaction using <br />
           Rondovision mobile app for now.
         </p>
-        <div className="mt-6 flex ml-24 space-x-4">
+        <div className="mt-6 flex justify-center md:justify-start space-x-4">
           <Link href="/playstore">
-            <Image src="/download.png" alt="Google Play Store" width={300} height={150} />
+            <Image 
+              src="/download.png" 
+              alt="Google Play Store" 
+              width={250} 
+              height={125} 
+              className="md:w-300 md:h-150" // Responsive width for larger screens
+            />
           </Link>
         </div>
       </div>
-      <div className='flex items-center '>
-        <Image src="/App.png" alt="App Promotion" width={900} height={1500} className="rounded-lg mr-32" />
+      <div className="flex justify-center sm:ml-5 sm:mr-10 sm:m-  items-center mt-6 md:mt-0 md:w-full">
+        <Image 
+          src="/App.png" 
+          alt="App Promotion" 
+          width={700} 
+          height={1200} 
+          className="rounded-lg md:w-[800px] md:h-[450px] lg:w-[900px] lg:h-[500px] mx-auto" // Increased size for medium and larger screens
+        />
       </div>
     </section>
   );
