@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from 'react';
 
 const Newsletter: React.FC = () => {
@@ -25,12 +25,12 @@ const Newsletter: React.FC = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Add your email here"
-            className="px-4 py-3 text-gray-700 rounded-l-md border-none focus:ring-2 focus:ring-yellow-700 w-full md:w-1/2 lg:w-1/3"
+            className="px-4 py-3 text-gray-700 rounded-md border-none focus:ring-2 focus:ring-yellow-700 w-full md:w-1/2 lg:w-1/3"
             required
           />
           <button
             type="submit"
-            className="bg-black text-white px-6 py-3 md:py-4 rounded-r-md font-bold hover:bg-gray-800 transition duration-300 mt-2 md:mt-0 md:ml-[-4px] lg:ml-[-8px]"
+            className="bg-black text-white px-6 py-3 md:py-4 rounded-md font-bold hover:bg-gray-800 transition duration-300 mt-2 md:mt-0 md:ml-[-4px] lg:ml-[-8px]"
           >
             SEND
           </button>
