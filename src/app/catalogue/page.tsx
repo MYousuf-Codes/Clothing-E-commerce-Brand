@@ -13,21 +13,21 @@ interface Product {
 }
 
 const products: Product[] = [
-    { id: 1, image: '/img1.jpg', title: 'Product 1', rating: 4.5, price: 29.99, category: 'Electronics' },
-    { id: 2, image: '/img2.jpg', title: 'Product 2', rating: 4.0, price: 39.99, category: 'Books' },
-    { id: 3, image: '/img3.jpg', title: 'Product 3', rating: 3.5, price: 19.99, category: 'Clothing' },
-    { id: 4, image: '/img4.jpg', title: 'Product 4', rating: 5.0, price: 49.99, category: 'Electronics' },
-    { id: 5, image: '/img5.jpg', title: 'Product 5', rating: 4.2, price: 24.99, category: 'Books' },
-    { id: 6, image: '/img6.jpg', title: 'Product 6', rating: 3.8, price: 34.99, category: 'Clothing' },
-    { id: 7, image: 'https://example.com/project3', title: 'Product 7', rating: 4.5, price: 29.99, category: 'Shoes' },
-    { id: 8, image: 'https://example.com/img8.jpg', title: 'Product 8', rating: 4.0, price: 39.99, category: 'Home Decor' },
-    { id: 9, image: 'https://example.com/img9.jpg', title: 'Product 9', rating: 3.5, price: 19.99, category: 'Sports' },
-    { id: 10, image: 'https://example.com/img10.jpg', title: 'Product 10', rating: 4.5, price: 29.99, category: 'Shoes' },
-    { id: 11, image: 'https://example.com/img11.jpg', title: 'Product 11', rating: 4.0, price: 39.99, category: 'Home Decor' },
-    { id: 12, image: 'https://example.com/img12.jpg', title: 'Product 12', rating: 3.5, price: 19.99, category: 'Sports' },
-];
+    { id: 1, image: '/pr-1.jpg', title: 'Product 1', rating: 4.5, price: 29.99, category: 'Indoor' },
+    { id: 2, image: '/pr-1.jpg', title: 'Product 2', rating: 4.9, price: 239.99, category: 'Outdoor' },
+    { id: 3, image: '/pr-1.jpg', title: 'Product 3', rating: 4.7, price: 249.99, category: 'Sports' },
+    { id: 4, image: '/pr-1.jpg', title: 'Product 4', rating: 4.6, price: 1022.99, category: 'Womens' },
+    { id: 5, image: '/pr-1.jpg', title: 'Product 5', rating: 4.2, price: 2009.99, category: 'Mens' },
+    { id: 6, image: '/pr-1.jpg', title: 'Product 6', rating: 3.9, price: 10000.99, category: 'Kids' },
+    { id: 7, image: '/pr-1.jpg', title: 'Product 7', rating: 3.5, price: 22319.99, category: 'Womens' },
+    { id: 8, image: '/pr-1.jpg', title: 'Product 8', rating: 3.8, price: 22319.99, category: 'Outdoor' },
+    { id: 9, image: '/pr-1.jpg', title: 'Product 9', rating: 4.0, price: 2921.99, category: 'Kids' },
+    { id: 10, image: '/pr-1.jpg', title: 'Product 10', rating: 5.0, price: 429.99, category: 'Mens' },
+    { id: 11, image: '/pr-1.jpg', title: 'Product 11', rating: 4.1, price: 829.99, category: 'Kids' },
+    { id: 12, image: '/pr-1.jpg', title: 'Product 12', rating: 3.2, price: 999.99, category: 'Womens' },
+]
 
-const categories = ['Electronics', 'Books', 'Clothing', 'Shoes', 'Home Decor', 'Sports'];
+const categories = ['Womens', 'Mens', 'Kids', 'Indoor', 'Outdoor', 'Sports'];
 const priceRanges = [
     { label: '$10 - $100', min: 10, max: 100 },
     { label: '$100 - $1k', min: 100, max: 1000 },
@@ -36,6 +36,7 @@ const priceRanges = [
     { label: '$5k - $10k', min: 5000, max: 10000 },
     { label: '$10k - $20k', min: 10000, max: 20000 },
     { label: '$20k - $40k', min: 20000, max: 40000 },
+    { label: 'All', min: 1, max: 1000000000 },
 ];
 
 const Catalogue = () => {

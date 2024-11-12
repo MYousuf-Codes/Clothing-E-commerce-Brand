@@ -16,7 +16,7 @@ const favorites: Favorite[] = [
 const FavoritesSection: React.FC = () => {
   return (
     <section className="p-8">
-      <h2 className="text-3xl font-extrabold mb-6 ml-16">Young’s Favourite</h2>
+      <h2 className="text-3xl font-extrabold mb-6 ml-16">{`Young’s Favourite`}</h2>
       <div className="flex ml-16 gap-8">
         {favorites.map(({ title, img, href }, index) => (
           <Link

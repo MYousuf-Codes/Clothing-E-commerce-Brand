@@ -40,7 +40,7 @@ const Header: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link href="/favourite" className="font-semibold">
+            <Link href="/favourites" className="font-semibold">
               FAVORITES
             </Link>
           </li>
