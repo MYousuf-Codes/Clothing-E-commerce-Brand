@@ -14,10 +14,10 @@ const Header: React.FC = () => {
   return (
     <header className="flex items-center justify-between p-5 bg-background/50 backdrop-blur-lg bg-white">
       <Link href="/">
-        <Image src="/logo.png" alt="Logo" width={140} height={70} className="ml-4 lg:ml-16" />
+        <Image src="/Logo.png" alt="Logo" width={140} height={70} className="ml-4 lg:ml-16" />
       </Link>
 
-      {/* Hamburger Icon for small devices */}
+      {/* Hamburger for small devices */}
       <button
         className="lg:hidden block text-black focus:outline-none mr-4"
         onClick={toggleMenu}
