@@ -15,23 +15,17 @@ const favorites: Favorite[] = [
 
 const FavoritesSection: React.FC = () => {
   return (
-    <section className="p-6 sm:p-8">
-      <h2 className="text-3xl font-extrabold mb-6 text-center">Young’s Favourite</h2>
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8">
+    <section className="p-8">
+      <h2 className="text-3xl font-extrabold mb-6 ml-16">Young’s Favourite</h2>
+      <div className="flex ml-16 gap-8">
         {favorites.map(({ title, img, href }, index) => (
           <Link
             key={index}
             href={href}
             className="text-left transition transform hover:scale-105 flex flex-col items-center"
           >
-            <Image 
-              src={img} 
-              alt={title} 
-              width={600} 
-              height={700} 
-              className="w-full sm:w-72 h-auto rounded-lg shadow-md" 
-            />
-            <h3 className="mt-4 text-xl font-semibold text-center">{title}</h3>
+            <Image src={img} alt={title} width={600} height={700} className="mx-auto" />
+            <h3 className="flex mt-4 text-xl font-semibold">{title}</h3>
             <p className="text-gray-500">Explore Now</p>
           </Link>
         ))}
