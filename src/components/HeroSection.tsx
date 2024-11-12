@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const HeroSection = () => {
   return (
@@ -13,9 +14,11 @@ const HeroSection = () => {
         <p className="mt-5 font-arial font-semibold text-lg md:text-xl">
           Live for influential and innovative fashion!
         </p>
+        <Link href={"/catalogue"}>
         <button className="mt-5 mb-10 py-2 px-4 bg-black text-white rounded-lg transition duration-300 hover:bg-gray-800">
           Shop Now
         </button>
+        </Link>
       </div>
       <Image 
         src="/hero.png" 
